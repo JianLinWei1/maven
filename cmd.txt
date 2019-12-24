@@ -1,0 +1,6 @@
+mvn install:install-file -Dfile=AIFACE_API_SDK_JAVA.jar -DgroupId=com.jian -DartifactId=ai_face_sdk  -Dversion=201912091705 -Dpackaging=jar  -DlocalRepositoryPath=D:\new_maven\respository 
+
+
+mvn install:install-file -DgroupId=com.jian -DartifactId=ai_face_sdk -Dversion=201912091705 -Dfile=AIFACE_API_SDK_JAVA.jar  -Dpackaging=jar -DgeneratePom=true -DlocalRepositoryPath=D:\new_maven\respository  -DcreateChecksum=true
+
+mvn deploy:deploy-file -DgroupId=com.jian -DartifactId=ai_face_sdk -Dversion=0.0.2 -Dpackaging=jar -Dfile=AIFACE_API_SDK_JAVA.jar  -Durl=https://gitee.com/jianlinwei/maven/blob/master/release  -DrepositoryId=release
